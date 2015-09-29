@@ -9,7 +9,7 @@
     "atom",
     "syntax"
   ],
-  "repository": "git+https://github.com/danibram/flat-ui-syntax-atom.git",
+  "repository": "https://github.com/danibram/flat-ui-syntax-atom.git",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
