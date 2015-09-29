@@ -2,18 +2,24 @@
   .meta.structure.dictionary.json {
     & > .string.quoted.json {
       & > .punctuation.string {
-        color: @hue-5;
+        color: @hue-3;
       }
-      color: @hue-5;
+      color: @hue-3;
     }
   }
-
+  .punctuation.definition.array.begin.json, .punctuation.definition.array.end.json {
+    font-weight: bold;
+  }
+  .punctuation.definition.dictionary.begin.json,.punctuation.definition.dictionary.end.json{
+    font-weight: bold;
+  }
   .meta.structure.dictionary.json, .meta.structure.array.json {
-    & > .value.json > .string.quoted.json,
-    & > .value.json > .string.quoted.json > .punctuation {
-      color: @hue-4;
+    & > .value.json > .string.quoted.json {
+      color: @hue-6;
     }
-
+    & > .value.json > .string.quoted.json > .punctuation {
+      color: @hue-6;
+    }
     & > .constant.language.json {
       color: @hue-1;
     }
