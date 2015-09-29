@@ -1,0 +1,12 @@
+{
+  "name": "flat-ui-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A flat ui inspired on the sublime text Flat UI syntax, based on one dark syntax",
+  "keywords": ["flat-ui", "flatui"],
+  "repository": "",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
