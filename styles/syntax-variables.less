@@ -19,16 +19,18 @@
 @syntax-result-marker-color-selected: @syntax-accent;
 
 // Gutter colors
-@syntax-gutter-text-color:                darken(@syntax-fg, 26%);
-@syntax-gutter-text-color-selected:       @syntax-fg;
-@syntax-gutter-background-color:          @syntax-bg; // unused
-@syntax-gutter-background-color-selected: lighten(@syntax-bg, 2%);
+@syntax-gutter-text-color:                lighten(@syntax-comment, 5%);
+@syntax-gutter-text-color-selected:       lighten(@syntax-fg, 10%);
+@syntax-gutter-background-color:          lighten(@syntax-bg, 2%); // unused
+@syntax-gutter-background-color-selected: lighten(@syntax-background-color, 10%);
+//Gutter custom
+@syntax-gutter-custom-number-bg: darken(@syntax-bg, 5%);
 
 // Git colors - For git diff info. i.e. in the gutter
-@syntax-color-renamed:  @hue-2;
-@syntax-color-added:    @hue-4;
-@syntax-color-modified: @hue-6;
-@syntax-color-removed:  @hue-3;
+@syntax-color-renamed:  @hue-1;
+@syntax-color-added:    lime;
+@syntax-color-modified: yellow;
+@syntax-color-removed:  red;
 
 // For language entity colors
 @syntax-color-variable:   @hue-5;

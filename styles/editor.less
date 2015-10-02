@@ -7,7 +7,7 @@ atom-text-editor, // <- remove when Shadow DOM can't be disabled
   color: @syntax-text-color;
 
   .line.cursor-line {
-    background-color: @syntax-cursor-line;
+    background-color: @highligth-line;
   }
 
   .invisible {
@@ -39,42 +39,23 @@ atom-text-editor, // <- remove when Shadow DOM can't be disabled
     background-color: @syntax-wrap-guide-color;
   }
 
-  .gutter {
 
+  .gutter {
+    background: @syntax-gutter-custom-number-bg;
     .line-number {
       color: @syntax-gutter-text-color;
       -webkit-font-smoothing: antialiased;
 
       &.cursor-line {
         color: @syntax-gutter-text-color-selected;
-        background-color: @syntax-gutter-background-color-selected;
-      }
-      &.cursor-line-no-selection {
-        background-color: transparent;
+        background: @highligth-line;
       }
 
       .icon-right {
         color: @syntax-text-color;
       }
-
-      &.git-line-added {
-          border-left-width: 10px;
-          border-left-color: lime;
-          padding-left: calc(~"0.5em - 10px");
-      }
-      &.git-line-modified {
-          border-left-width: 10px;
-          border-left-color: yellow;
-          padding-left: calc(~"0.5em - 10px");
-      }
-      &.git-line-removed:before {
-          bottom: -15px;
-          margin-top: -15px;
-          border-width: 15px;
-          border-left-color: red;
-      }
     }
-    /*
+
     &:not(.git-diff-icon) .line-number.git-line-removed {
       &.git-line-removed::before {
         bottom: -3px;
@@ -89,7 +70,6 @@ atom-text-editor, // <- remove when Shadow DOM can't be disabled
         pointer-events: none;
       }
     }
-    */
   }
 
   .gutter .line-number.folded,
