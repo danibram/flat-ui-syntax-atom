@@ -2,7 +2,7 @@
   "author": "Daniel Biedma <info@dbram.co>",
   "name": "flat-ui-syntax",
   "theme": "syntax",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "A flat ui inspired on the sublime text Flat UI syntax, based on one dark syntax",
   "keywords": [
     "flat-ui",
